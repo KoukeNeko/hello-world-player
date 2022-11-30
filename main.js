@@ -2,6 +2,7 @@
 const { app, BrowserWindow } = require('electron')
 const path = require('path')
 const isDev = require('electron-is-dev');
+const electronReload = require('electron-reload')
 
 function createWindow () {
     const mainWindow = new BrowserWindow({
@@ -11,7 +12,7 @@ function createWindow () {
             preload: path.join(__dirname, 'preload.js')
         },
         icon: path.join(__dirname, 'icon.png'),
-        vibrancy: 'header',
+        vibrancy: 'dark',
         titleBarStyle: 'hiddenInset',
         
     })
@@ -37,3 +38,7 @@ app.whenReady().then(() => {
 app.on('window-all-closed', function () {
     if (process.platform !== 'darwin') app.quit()
 })
+
+require('electron-reload')(__dirname, {
+  electron: path.join(__dirname, 'node_modules', '.bin', 'electron')
+});
