@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  background: transparent !important;
   /* drag */
   -webkit-app-region: drag;
   height: 100vh;
