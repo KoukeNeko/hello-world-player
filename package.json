@@ -8,12 +8,16 @@
     "electron": "electron ."
   },
   "dependencies": {
+    "autoprefixer": "^10.4.13",
+    "daisyui": "^2.42.1",
     "electron": "^22.0.0",
     "electron-is-dev": "^2.0.0",
     "electron-reload": "^2.0.0-alpha.1",
+    "postcss": "^8.4.19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "^5.0.1",
+    "tailwindcss": "^3.2.4",
     "wait-on": "^6.0.1",
     "web-vitals": "^3.0.3"
   },
