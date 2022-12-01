@@ -1,5 +1,7 @@
 import "./App.css";
 
+import { Home } from './screen'
+
 function App() {
   return (
     <div className="App hero-content text-center">

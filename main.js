@@ -15,7 +15,7 @@ function createWindow () {
         titleBarStyle: 'hiddenInset',
         vibrancy: 'sidebar',
         transparent: true,
-        frame: false,
+        // frame: false,
     })
 
     if (isDev) {
