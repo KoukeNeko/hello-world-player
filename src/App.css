@@ -3,7 +3,6 @@
   /* drag */
   -webkit-app-region: drag;
   height: 100vh;
-  background: transparent;
-  /* background: #282c34; */
+  background-color: hsl(var(--b1)/var(--tw-bg-opacity));
   /* background: url('https://personal-cv-de742.web.app/static/media/bg.78bc04c91065663d1bce.jpg') */
 }

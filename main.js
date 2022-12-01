@@ -13,7 +13,7 @@ function createWindow () {
         },
         icon: path.join(__dirname, './src/logo.svg'),
         titleBarStyle: 'hiddenInset',
-        vibrancy: 'sidebar',
+        vibrancy: 'dark',
         transparent: true,
         // frame: false,
     })
