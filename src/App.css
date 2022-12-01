@@ -6,3 +6,7 @@
   background-color: hsl(var(--b1)/var(--tw-bg-opacity));
   /* background: url('https://personal-cv-de742.web.app/static/media/bg.78bc04c91065663d1bce.jpg') */
 }
+
+.NoDrag {
+  -webkit-app-region: no-drag;
+}
