@@ -6,12 +6,13 @@ const electronReload = require('electron-reload')
 
 function createWindow () {
     const mainWindow = new BrowserWindow({
-        width: 800,
+        width: 1000,
         height: 600,
         webPreferences: {
             preload: path.join(__dirname, 'preload.js')
         },
         icon: path.join(__dirname, './src/logo.svg'),
+        // titleBarStyle: 'hiddenInset',
         titleBarStyle: 'hiddenInset',
         vibrancy: 'dark',
         transparent: true,

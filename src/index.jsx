@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import Menu from './components/Menu';
+import {Menu, PlayerBar} from './components'
 
 import {
   createBrowserRouter,
@@ -22,9 +22,15 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <div className='flex' data-theme="night">
-      <Menu/>
-      <RouterProvider router={router} />
+    <div data-theme="night">
+      <div className='flex'>
+        <Menu/>
+        <div className='relative w-full'>
+          <RouterProvider router={router} />
+          <PlayerBar/>
+        </div>
+      </div>
+      
     </div>
   </React.StrictMode>
 );

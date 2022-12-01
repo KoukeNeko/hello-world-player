@@ -2,6 +2,8 @@ import React from "react";
 
 function Menu() {
 
+    const [menu, setMenu] = React.useState([{name: 'Home', path: '/'}]);
+    
   const buttonElement = (props) => {
     return (
         <li>
@@ -26,8 +28,11 @@ function Menu() {
   }
 
   return (
-    <ul className="menu p-3 pt-10 gap-3 flex content-between">
+    <ul className="menu p-3 pt-10 gap-3">
       {buttonElement({ active: "active" })}
+      {menu.map((item) => {
+        return buttonElement({ active: "" });
+      })}
       <li>
         <a>
           <svg
