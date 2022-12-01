@@ -58,7 +58,7 @@ function Menu() {
         </a>
       </li>
       <li className="mt-auto">
-        <a>
+        <a className="flex justify-center items-center">
             <FontAwesomeIcon icon={faGear} />
         </a>
       </li>
