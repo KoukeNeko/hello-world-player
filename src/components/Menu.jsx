@@ -51,7 +51,7 @@ function Menu() {
           </svg>
         </a>
       </li>
-      <li>
+      <li className="mt-auto">
         <a>
           <svg
             xmlns="http://www.w3.org/2000/svg"
