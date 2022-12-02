@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import {Menu, PlayerBar} from './components'
+import { Bookmarks, Favorites, Music, PlayQueue } from './screen';
 
 import {
   createBrowserRouter,
@@ -16,7 +17,19 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-  },
+  },{
+    path: "/music",
+    element: <Music />,
+  },{
+    path: "/queue",
+    element: <PlayQueue />,
+  },{
+    path: "/favorites",
+    element: <Favorites />,
+  },{
+    path: "/bookmarks",
+    element: <Bookmarks />,
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
